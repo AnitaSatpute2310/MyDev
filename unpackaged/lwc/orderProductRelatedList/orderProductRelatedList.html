@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Order Products" icon-name="custom:custom8">
+        <div if:true={showTable}>
+            <div class="slds-m-around_medium">
+                <div style="height: 180px;">
+                    <lightning-datatable 
+                        key-field="id"
+                        data={productData}
+                        columns={columns}
+                        hide-checkbox-column>                    
+                    </lightning-datatable>
+                </div>
+            </div>
+        </div>
+    </lightning-card> 
+</template>
